@@ -1,22 +1,22 @@
 class Restack < Formula
   desc "Rebase stacked PRs onto their current base branches"
   homepage "https://github.com/raine/restack"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/restack/releases/download/v0.1.1/restack-darwin-arm64.tar.gz"
-      sha256 "8f25bb46c793fbbda0b9134c6edd6f31035a8c61b425228efbba75581ebd20a1"
+      url "https://github.com/raine/restack/releases/download/v0.1.2/restack-darwin-arm64.tar.gz"
+      sha256 "db35057af8209d7a26398c16e87c92c5a992cf2d041ae1e2957ec3809a1c2dfb"
     else
-      url "https://github.com/raine/restack/releases/download/v0.1.1/restack-darwin-amd64.tar.gz"
-      sha256 "c867091583d05d52bd8cb863d5a87fbc72c9ffb6e87fc7072430827af1b7f52c"
+      url "https://github.com/raine/restack/releases/download/v0.1.2/restack-darwin-amd64.tar.gz"
+      sha256 "c6796eb5192082ff2c1189d7aaa7b53d1880812a4026688179bd1669244edb93"
     end
   end
 
   on_linux do
-    url "https://github.com/raine/restack/releases/download/v0.1.1/restack-linux-amd64.tar.gz"
-    sha256 "142ebc6f926bef64e6d24b7d86f9888a91b7076558bc837afe65056e1f9a36b0"
+    url "https://github.com/raine/restack/releases/download/v0.1.2/restack-linux-amd64.tar.gz"
+    sha256 "c220a3e88b1e478fa3f1a7e11f996e56dcceb47ce670db5710adb675e8babaeb"
   end
 
   def install
